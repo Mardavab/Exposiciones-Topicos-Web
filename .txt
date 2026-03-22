@@ -1,0 +1,7 @@
+Se inicializa el proyecto con 
+    npm init -y
+
+Posteriormente se instalal Express 
+    npm install express
+
+Se crea el archivo dockerfile y el docker-compose
