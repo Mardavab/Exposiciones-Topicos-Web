@@ -1,0 +1,16 @@
+docker exec -it npm_npx_practica bash #Entramos a la terminal de docker del modulo
+npm init -y #En este comando crea el proyecto
+npm install commander chalk@4 # Aca instalamos las dependencias necesarias para ejecutar el proyecto
+
+En el package.json se agrega debajo de main esto
+    "bin": {
+        "password-generator-cli":"index.js"
+    }
+
+Posteriormente se dan permisos de ejecucion al archivo 
+    chmod +x index.js
+
+Despues se ejecuta el comnado que pusimos en bin
+    npx password-generator-cli 10
+
+Ahi se genera un una contraseña de longitud 10 
